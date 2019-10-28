@@ -8,11 +8,28 @@
              xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              x:Class="App8.MainPage">
 
-    <StackLayout BackgroundColor="#02a4f7">
-    
-        <StackLayout Padding="20" Margin="100,200,100,0"  HeightRequest="100" IsClippedToBounds="False" BackgroundColor="#95d021">
-            <ScrollView HeightRequest="20" Padding="20" VerticalOptions="Start" BackgroundColor="#d0409f" >
-                <StackLayout Spacing="5">
+    <Grid BackgroundColor="DeepSkyBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Column="0" Padding="20" VerticalOptions="Start" HeightRequest="100" IsClippedToBounds="False" BackgroundColor="GreenYellow" >
+            <StackLayout HeightRequest="200" IsClippedToBounds="True" BackgroundColor="HotPink" Padding="20" >
+                <Label Text="AAA" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="BBB" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="CCC" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="DDD" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="EEE" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="FFF" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="JJJ" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="KKK" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="LLL" TextColor="Gray" BackgroundColor="#edeff2"/>
+                <Label Text="MMM" TextColor="Gray" BackgroundColor="#edeff2"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Column="1" Padding="20" VerticalOptions="Start" HeightRequest="100" IsClippedToBounds="True" BackgroundColor="GreenYellow">
+            <ScrollView HeightRequest="200" Padding="20" VerticalOptions="Start" BackgroundColor="HotPink" IsClippedToBounds="True" >
+                <StackLayout Spacing="5" BackgroundColor="Silver" IsClippedToBounds="True" VerticalOptions="FillAndExpand">
                     <Label Text="AAA" TextColor="Gray" BackgroundColor="#edeff2"/>
                     <Label Text="BBB" TextColor="Gray" BackgroundColor="#edeff2"/>
                     <Label Text="CCC" TextColor="Gray" BackgroundColor="#edeff2"/>
@@ -25,7 +42,6 @@
                     <Label Text="MMM" TextColor="Gray" BackgroundColor="#edeff2"/>
                 </StackLayout>
             </ScrollView>
-        </StackLayout>
-       
-    </StackLayout>
+        </StackLayout>       
+    </Grid>
 </ContentPage>
